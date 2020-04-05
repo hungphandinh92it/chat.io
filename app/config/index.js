@@ -11,7 +11,8 @@ var init = function () {
 				password: process.env.dbPassword || defaultConfig.db.dbPassword,
 				host: process.env.dbHost || defaultConfig.db.dbHost,
 				port: process.env.dbPort || defaultConfig.db.dbPort,
-				name: process.env.dbName || defaultConfig.db.dbName
+				name: process.env.dbName || defaultConfig.db.dbName,
+				fullUri: process.env.fullDBUri
 			},
 			sessionSecret: process.env.sessionSecret || defaultConfig.sessionSecret,
 			facebook: {
